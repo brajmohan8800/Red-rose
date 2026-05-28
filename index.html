@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED ROSE  | Premium Western Wear Manufacturer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Changed href to "index" for clean URL -->
+        <a href="index" class="logo-container">
+            <i class="fas fa-rose" style="color: var(--primary-red); font-size: 1.8rem;"></i>
+            <div><div class="logo-text">RED ROSE</div><span class="logo-sub">Western Wear Mfg.</span></div>
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul id="nav-list">
+                <!-- Removed .html from all links -->
+                <li><a href="index" class="active">Home</a></li>
+                <li><a href="collection">Collection</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Design by <span>Western Wear</span></h1>
+            <p>Premium Quality Shirts, Two-Pieces, Crop Tops & Frocks.<br>Direct from Manufacturers at Factory Rates.</p>
+            <!-- Link updated to clean URL -->
+            <a href="collection" class="btn-primary">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="section-title">
+            <p>Browse By</p>
+            <h2>Our Categories</h2>
+        </div>
+        <div class="cat-grid">
+            <!-- Links updated to clean URL -->
+            <div class="cat-item" onclick="window.location.href='collection'">
+                <div class="cat-icon"><i class="fas fa-tshirt"></i></div>
+                <h3>Shirts</h3>
+            </div>
+            <div class="cat-item" onclick="window.location.href='collection'">
+                <div class="cat-icon"><i class="fas fa-female"></i></div>
+                <h3>Two-Piece</h3>
+            </div>
+            <div class="cat-item" onclick="window.location.href='collection'">
+                <div class="cat-icon"><i class="fas fa-star"></i></div>
+                <h3>Crop Tops</h3>
+            </div>
+            <div class="cat-item" onclick="window.location.href='collection'">
+                <div class="cat-icon"><i class="fas fa-gem"></i></div>
+                <h3>Frocks</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+        <div class="section-title">
+            <p>Our Strength</p>
+            <h2>Why Choose Red Rose?</h2>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-industry"></i>
+                <h3>We Are Manufacturers</h3>
+                <p>No middlemen. We design, stitch, and deliver directly to you.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Quality Guaranteed</h3>
+                <p>Premium fabric quality checked at every stage of production.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tags"></i>
+                <h3>Factory Rates</h3>
+                <p>Get the best wholesale prices in the market for bulk orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <div class="promo-text">
+            <h2>Bulk Orders? Best Prices!</h2>
+            <p>We specialize in bulk manufacturing for retailers and brands. Get custom designs made at unbeatable factory rates.</p>
+            <br>
+            <a href="https://wa.me/1234567890" class="btn-primary" style="background: var(--gold); color: black;">Get Quote</a>
+        </div>
+        <div class="promo-img">
+            <i class="fas fa-tshirt"></i>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section">
+        <div class="section-title">
+            <p>New Arrivals</p>
+            <h2>Trending Designs</h2>
+        </div>
+        <div class="product-grid" id="featured-products"></div>
+        <div style="text-align: center; margin-top: 40px;">
+            <!-- Link updated to clean URL -->
+            <a href="collection" class="btn-primary" style="background: transparent; color: var(--primary-red); border: 2px solid var(--primary-red);">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-title">
+            <p>Happy Clients</p>
+            <h2>What They Say</h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"The quality of the shirts is amazing. As a retailer, I love the factory rates Red Rose offers."</p>
+                <span class="testi-author">- Priya Sharma, Retailer</span>
+            </div>
+            <div class="testi-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Best western wear manufacturer I have found. The crop tops are very trendy and well-stitched."</p>
+                <span class="testi-author">- Anjali Verma, Boutique Owner</span>
+            </div>
+            <div class="testi-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Fast delivery and great communication. Highly recommended for bulk orders."</p>
+                <span class="testi-author">- Rohan Das, Distributor</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo-text" style="color: white; margin-bottom: 20px;">RED ROSE </div>
+                <p>Premium Western Wear Manufacturers.<br>Design by Western Wear Only Upper.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <!-- Links updated to clean URLs -->
+                    <li><a href="index">Home</a></li>
+                    <li><a href="collection">Collection</a></li>
+                    <li><a href="about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> info@redrose.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Red Rose Western Wear. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <div class="floating-contact">
+        <a href="https://wa.me/1234567890" class="float-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-content">
+            <div class="close-modal" onclick="closeModal()"><i class="fas fa-times"></i></div>
+            <div class="product-img" id="modal-img"><i class="fas fa-tshirt"></i></div>
+            <div class="modal-details">
+                <h2 id="modal-title">Product Name</h2>
+                <span class="price" id="modal-price" style="font-size: 1.5rem; display:block; margin: 10px 0; color: var(--primary-red);">₹ 000</span>
+                <p id="modal-desc">Description...</p>
+                <div style="margin: 15px 0; font-size: 0.9rem; color: #555;">
+                    <strong>Sizes:</strong> S, M, L, XL, XXL<br>
+                    <strong>Fabric:</strong> Premium Cotton / Georgette
+                </div>
+                <button class="whatsapp-btn" onclick="sendEnquiry()"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load featured products
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('featured-products');
+            // Show first 4 products on home
+            if(typeof products !== 'undefined') {
+                products.slice(0, 4).forEach(product => createProductCard(product, container));
+            }
+        });
+    </script>
+</body>
+</html>

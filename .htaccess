@@ -1,0 +1,14 @@
+# .htaccess File for Clean URLs
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Remove .html extension from URL
+# Example: user types /collection, server serves /collection.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Force www and HTTPS (Optional but Recommended for Live Site)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
